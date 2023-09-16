@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(images/grass.jpg);
+}
+.container{
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+}
+#board{
+    margin-top: 10px;
+    background-image: url(images/road.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.game-over-alert{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: lightgrey;
+    opacity: 0.8;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.game-over-modal{
+    background-color: white;
+    text-align: center;
+    padding:60px;
+    width: 40%;
+    border: 3px solid grey;
+    border-radius: 10px;
+    color: green;
+    
+}
+
+.alert-content h3{
+    font-size: 50px;
+    color: red;
+}
+.alert-content span{
+    margin-left: 10px;
+    font-weight: bold;
+    background: white;
+    padding: 5px;
+}
+.alert-buttons{
+    padding: 20px 0 0 0;
+}
+.alert-buttons:hover{
+    cursor: pointer;
+}
+.alert-buttons button{
+    padding: 10px 40px;
+}
+.alert-buttons .new-game{
+    background: green;
+    color: white;
+    border: 1px solid green;
+}
+.high-score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.score-div{
+    background-color: white;
+    padding: 20px 40px;
+    font-size: 2rem;
+}
+.instructions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.instruction-list{
+    background-color: white;
+    padding: 20px
+}
+.instruction-list h3{
+    font-size: 2rem;
+}
+.instruction-list h4{
+    font-size: 1.2rem;
+    padding: 20px 0 0 0;
+}

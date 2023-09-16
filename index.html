@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Racer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="instructions">
+            <div class="instruction-list">
+                <h3>Instructions</h3>
+                <h4>Move Left:- Left Arrow / D</h4>
+                <h4>Move Right:- Right Arrow / A</h4>
+                <h4>Move Up:- Up Arrow / W</h4>
+                <h4>Move Down:- Down Arrow / S</h4>
+                <h4>Fire:- Space Key </h4>
+                <h4>Pause: Enter Key</h4>
+            </div>
+            
+        </div>
+        <canvas id="board"></canvas>
+        <div class="high-score">
+            <div class="score-div">
+                <div class="settings">
+                    <div class="stop-audio">
+                        
+                    </div>
+                </div>
+                <h4>High Score</h4>
+                <span id="high-score"></span>
+            </div>
+            
+        </div>
+    </div>
+    <div class="game-over-alert">
+        <div class="game-over-modal">
+            <div class="alert-content">
+                <h3>Game Over</h3>
+                 Your score<span class="score"></span>
+                 <p class="Highest score: " class="highest-score"></p>
+             </div>
+             <div class="alert-buttons">
+                 <button class="new-game">OK</button>
+             </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
